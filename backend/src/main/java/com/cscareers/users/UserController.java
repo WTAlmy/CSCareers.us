@@ -1,14 +1,27 @@
 package com.cscareers.users;
 
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
 public class UserController {
+	
+	@Autowired
+	private UserDao dao;
 
 	@RequestMapping("/create_user")
 	public String index() {
 		return "Create User Endpoint";
+	}
+	
+	@RequestMapping("/list_users")
+	public List<User> list_users() {
+	    List<User> persons = dao.loadAll();
+	    return persons;
 	}
 	
 	@RequestMapping("/sample_user")
