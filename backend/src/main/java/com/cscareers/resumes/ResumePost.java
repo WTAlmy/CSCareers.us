@@ -3,74 +3,56 @@ package com.cscareers.resumes;
 public class ResumePost {
 	
 	private int id;
-	private String username;
-	private String password;
-	
-	private double GPA;
-	private String college;
-	private int college_year;
-	private int previous_internships;
+	private String file_url;
+	private String title;
+	private String description;
+	private String date_posted;
 
+	
 	public int getId() {
 		return id;
 	}
-	
 	public void setId(int id) {
 		this.id = id;
 	}
 	
-	public String getUsername() {
-		return username;
+	public String getFileUrl() {
+		return file_url;
 	}
 	
-	public void setUsername(String username) {
-		this.username = username;
+	public void setFileUrl(String file_url) {
+		this.file_url = file_url;
 	}
 	
-	public String getPassword() {
-		return password;
+	public String getTitle() {
+		return title;
 	}
 	
-	public void setPassword(String password) {
-		this.password = password;
+	public void setTitle(String title) {
+		this.title = title;
 	}
 	
-	public double getGPA() {
-		return GPA;
+	public String getDescription() {
+		return description;
 	}
 	
-	public void setGPA(double GPA) {
-		this.GPA = GPA;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 	
-	public String getCollege() {
-		return college;
+	public String getDatePosted() {
+		return date_posted;
 	}
 	
-	public void setCollege(String college) {
-		this.college = college;
-	}
-	
-	public int get_college_year() {
-		return college_year;
-	}
-	
-	public void set_college_year(int college_year) {
-		this.college_year = college_year;
+	public void setDatePosted(String date_posted) {
+		this.date_posted = date_posted;
 	}
 
-	public int get_prev_internships() {
-		return previous_internships;
-	}
-	
-	public void set_prev_internships(int prev) {
-		this.previous_internships = prev;
-	}
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", password=" + password + ", GPA=" + GPA + ", college="
-				+ college + ", college_year=" + college_year + ", previous_internships=" + previous_internships + "]";
+		return "User [id=" + id + ", file_url=" + file_url + ", title=" + title + ", description=" + description + ", date_posted="
+				+ date_posted+ "]";
 	}
 	
 }
