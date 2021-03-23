@@ -13,26 +13,27 @@ public class UserController {
 	@Autowired
 	private UserDao dao;
 
-	@RequestMapping("/create_user")
+	@RequestMapping("/users/create")
 	public String index() {
 		return "Create User Endpoint";
 	}
 	
-	@RequestMapping("/list_users")
+	@RequestMapping("/users/list")
 	public List<User> list_users() {
-	    List<User> persons = dao.loadAll();
-	    return persons;
+	    List<User> users = dao.loadAll();
+	    return users;
 	}
 	
-	@RequestMapping("/sample_user")
+	@RequestMapping("/users/sample")
 	public User newUser() {
 		User user = new User();
 		user.setId(7);
 		user.setUsername("Memer");
 		user.setPassword("123456");
+		user.setGPA(3.7f);
 		user.setCollege("UCSC");
-		user.set_college_year(5);
-		user.set_prev_internships(2);
+		user.setCollegeYear(5);
+		user.setPrevInternships(2);
 		return user;
 	}
 

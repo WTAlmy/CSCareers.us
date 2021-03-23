@@ -20,7 +20,7 @@ public class UserDao {
 	}
 	
     public List<User> loadAll() {
-        return jdbcTemplate.query("select * from users", (resultSet, i) -> {
+        return jdbcTemplate.query("SELECT * FROM users", (resultSet, i) -> {
             return toUser(resultSet);
         });
     }
@@ -29,7 +29,11 @@ public class UserDao {
         User user = new User();
         user.setId(resultSet.getInt("id"));
         user.setUsername(resultSet.getString("username"));
-        user.setPassword(resultSet.getString("password"));
+        //user.setPassword(resultSet.getString("password"));
+        user.setGPA(resultSet.getFloat("GPA"));
+        user.setCollege(resultSet.getString("college"));
+        user.setCollegeYear(resultSet.getInt("college_year"));
+        user.setPrevInternships(resultSet.getInt("previous_internships"));
         return user;
     }
 

@@ -3,14 +3,15 @@ package com.cscareers.companies;
 public class Company {
 	
 	private int id;
-	private String username;
-	private String password;
+	private String name;
+	private String imageUrl;
 	
-	private double GPA;
-	private String college;
-	private int college_year;
-	private int previous_internships;
-
+	private int totalAll;
+	private int totalGrad;
+	private double avgGpa;
+	private double avgYear;
+	private double avgPrior;
+	
 	public int getId() {
 		return id;
 	}
@@ -19,58 +20,61 @@ public class Company {
 		this.id = id;
 	}
 	
-	public String getUsername() {
-		return username;
+	public String getName() {
+		return name;
 	}
 	
-	public void setUsername(String username) {
-		this.username = username;
+	public void setName(String name) {
+		this.name = name;
 	}
 	
-	public String getPassword() {
-		return password;
+	public String getImageUrl() {
+		return imageUrl;
 	}
 	
-	public void setPassword(String password) {
-		this.password = password;
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
 	}
 	
-	public double getGPA() {
-		return GPA;
+	public int getTotalAll() {
+		return totalAll;
 	}
 	
-	public void setGPA(double GPA) {
-		this.GPA = GPA;
+	public void setTotalAll(int totalAll) {
+		this.totalAll = totalAll;
 	}
 	
-	public String getCollege() {
-		return college;
+	public int getTotalGrad() {
+		return totalGrad;
 	}
 	
-	public void setCollege(String college) {
-		this.college = college;
+	public void setTotalGrad(int totalGrad) {
+		this.totalGrad = totalGrad;
 	}
 	
-	public int get_college_year() {
-		return college_year;
+	public double getAvgGpa() {
+		return avgGpa;
 	}
 	
-	public void set_college_year(int college_year) {
-		this.college_year = college_year;
-	}
-
-	public int get_prev_internships() {
-		return previous_internships;
+	public void setAvgGpa(double avgGpa) {
+		this.avgGpa = avgGpa;
 	}
 	
-	public void set_prev_internships(int prev) {
-		this.previous_internships = prev;
+	public double getAvgYear() {
+		return avgYear;
 	}
-
-	@Override
-	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", password=" + password + ", GPA=" + GPA + ", college="
-				+ college + ", college_year=" + college_year + ", previous_internships=" + previous_internships + "]";
+	
+	public void setAvgYear(double avgYear) {
+		this.avgYear = avgYear;
 	}
+	
+	public double getAvgPrior() {
+		return avgPrior;
+	}
+	
+	public void setAvgPrior(double avgPrior) {
+		this.avgPrior = avgPrior;
+	}
+    
 	
 }

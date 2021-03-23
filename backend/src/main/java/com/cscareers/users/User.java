@@ -6,7 +6,7 @@ public class User {
 	private String username;
 	private String password;
 	
-	private double GPA;
+	private float GPA;
 	private String college;
 	private int college_year;
 	private int previous_internships;
@@ -35,11 +35,11 @@ public class User {
 		this.password = password;
 	}
 	
-	public double getGPA() {
+	public float getGPA() {
 		return GPA;
 	}
 	
-	public void setGPA(double GPA) {
+	public void setGPA(float GPA) {
 		this.GPA = GPA;
 	}
 	
@@ -55,7 +55,7 @@ public class User {
 		return college_year;
 	}
 	
-	public void set_college_year(int college_year) {
+	public void setCollegeYear(int college_year) {
 		this.college_year = college_year;
 	}
 
@@ -63,7 +63,7 @@ public class User {
 		return previous_internships;
 	}
 	
-	public void set_prev_internships(int prev) {
+	public void setPrevInternships(int prev) {
 		this.previous_internships = prev;
 	}
 
