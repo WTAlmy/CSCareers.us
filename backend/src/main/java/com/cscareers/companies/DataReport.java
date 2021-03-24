@@ -3,14 +3,15 @@ package com.cscareers.companies;
 public class DataReport {
 	
 	private int id;
-	private String username;
-	private String password;
+	private int userId;
+	private int companyId;
+	private int accepted;
 	
-	private double GPA;
+	private float GPA;
 	private String college;
-	private int college_year;
-	private int previous_internships;
-
+	private int collegeYear;
+	private int previousInternships;
+	
 	public int getId() {
 		return id;
 	}
@@ -19,27 +20,35 @@ public class DataReport {
 		this.id = id;
 	}
 	
-	public String getUsername() {
-		return username;
+	public int getUserId() {
+		return userId;
 	}
 	
-	public void setUsername(String username) {
-		this.username = username;
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
 	
-	public String getPassword() {
-		return password;
+	public int getCompanyId() {
+		return companyId;
 	}
 	
-	public void setPassword(String password) {
-		this.password = password;
+	public void setCompanyId(int companyId) {
+		this.companyId = companyId;
 	}
 	
-	public double getGPA() {
+	public int getAccepted() {
+		return accepted;
+	}
+	
+	public void setAccepted(int accepted) {
+		this.accepted = accepted;
+	}
+	
+	public float getGPA() {
 		return GPA;
 	}
 	
-	public void setGPA(double GPA) {
+	public void setGPA(float GPA) {
 		this.GPA = GPA;
 	}
 	
@@ -51,26 +60,27 @@ public class DataReport {
 		this.college = college;
 	}
 	
-	public int get_college_year() {
-		return college_year;
+	public int getCollegeYear() {
+		return collegeYear;
 	}
 	
-	public void set_college_year(int college_year) {
-		this.college_year = college_year;
-	}
-
-	public int get_prev_internships() {
-		return previous_internships;
+	public void setCollegeYear(int collegeYear) {
+		this.collegeYear = collegeYear;
 	}
 	
-	public void set_prev_internships(int prev) {
-		this.previous_internships = prev;
+	public int getPreviousInternships() {
+		return previousInternships;
+	}
+	
+	public void setPreviousInternships(int previousInternships) {
+		this.previousInternships = previousInternships;
 	}
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", password=" + password + ", GPA=" + GPA + ", college="
-				+ college + ", college_year=" + college_year + ", previous_internships=" + previous_internships + "]";
+		return "DataReport [id=" + id + ", userId=" + userId + ", companyId=" + companyId + ", accepted=" + accepted
+				+ ", GPA=" + GPA + ", college=" + college + ", collegeYear=" + collegeYear + ", previousInternships="
+				+ previousInternships + "]";
 	}
 	
 }

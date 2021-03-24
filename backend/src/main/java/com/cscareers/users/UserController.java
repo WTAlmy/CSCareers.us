@@ -12,10 +12,22 @@ public class UserController {
 	
 	@Autowired
 	private UserDao dao;
+	
+	@RequestMapping("/users/login")
+	public User login(String username, String password) {
+		System.out.println("User: " + username + " Password: " + password);
+		return dao.login(username, password);
+	}
+	
+	@RequestMapping("/users/profile")
+	public User profile(String username) {
+		return dao.profile(username);
+	}
 
 	@RequestMapping("/users/create")
-	public String index() {
-		return "Create User Endpoint";
+	public User create_user(User user) {
+		dao.save(user);
+		return user;
 	}
 	
 	@RequestMapping("/users/list")
@@ -33,7 +45,7 @@ public class UserController {
 		user.setGPA(3.7f);
 		user.setCollege("UCSC");
 		user.setCollegeYear(5);
-		user.setPrevInternships(2);
+		user.setPreviousInternships(2);
 		return user;
 	}
 
