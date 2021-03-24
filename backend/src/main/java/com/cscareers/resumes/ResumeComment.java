@@ -3,74 +3,67 @@ package com.cscareers.resumes;
 public class ResumeComment {
 	
 	private int id;
+	private int resumeId;
 	private String username;
-	private String password;
+	private String commentText;
+	private String datePosted;
 	
-	private double GPA;
-	private String college;
-	private int college_year;
-	private int previous_internships;
+	public ResumeComment() {
+		
+	}
+	
+	public ResumeComment(int id, int resumeId, String username, String commentText, String datePosted) {
+		super();
+		this.id = id;
+		this.resumeId = resumeId;
+		this.username = username;
+		this.commentText = commentText;
+		this.datePosted = datePosted;
+	}
 
 	public int getId() {
 		return id;
 	}
-	
+
 	public void setId(int id) {
 		this.id = id;
 	}
-	
+
+	public int getResumeId() {
+		return resumeId;
+	}
+
+	public void setResumeId(int resumeId) {
+		this.resumeId = resumeId;
+	}
+
 	public String getUsername() {
 		return username;
 	}
-	
+
 	public void setUsername(String username) {
 		this.username = username;
 	}
-	
-	public String getPassword() {
-		return password;
-	}
-	
-	public void setPassword(String password) {
-		this.password = password;
-	}
-	
-	public double getGPA() {
-		return GPA;
-	}
-	
-	public void setGPA(double GPA) {
-		this.GPA = GPA;
-	}
-	
-	public String getCollege() {
-		return college;
-	}
-	
-	public void setCollege(String college) {
-		this.college = college;
-	}
-	
-	public int get_college_year() {
-		return college_year;
-	}
-	
-	public void set_college_year(int college_year) {
-		this.college_year = college_year;
+
+	public String getCommentText() {
+		return commentText;
 	}
 
-	public int get_prev_internships() {
-		return previous_internships;
+	public void setCommentText(String commentText) {
+		this.commentText = commentText;
 	}
 	
-	public void set_prev_internships(int prev) {
-		this.previous_internships = prev;
+	public String getDatePosted() {
+		return datePosted;
+	}
+
+	public void setDatePosted(String datePosted) {
+		this.datePosted = datePosted;
 	}
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", password=" + password + ", GPA=" + GPA + ", college="
-				+ college + ", college_year=" + college_year + ", previous_internships=" + previous_internships + "]";
+		return "ResumeComment [id=" + id + ", resumeId=" + resumeId + ", username=" + username + ", commentText="
+				+ commentText + ", datePosted=" + datePosted + "]";
 	}
-	
 }
