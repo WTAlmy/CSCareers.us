@@ -19,18 +19,18 @@ public class ProjectController {
 		return "Projects Endpoint";
 	}
 	
-	@PostMapping("projects/create_project")
+	@PostMapping("projects/post")
 	public void create_projcet(Project project) {
 		dao.create_project(project);
 	}
 	
-	@RequestMapping("projects/list_projects")
+	@RequestMapping("projects/list")
 	public List<Project> list_projects(){
 		List<Project> projects = dao.loadAll();
 		return projects; 
     }
 	
-	@RequestMapping("projects/sample_project")
+	@RequestMapping("projects/sample")
 	public Project sample_project() {
 		Project project = new Project(1, 1, "Sample Project", "sample project description", 
 				"2021-03-22 22:38:49", "c++,python","frontend,backend", "discord.com");
