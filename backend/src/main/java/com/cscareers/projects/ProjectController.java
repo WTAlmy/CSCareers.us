@@ -5,10 +5,13 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+
 @RestController
+@CrossOrigin("*")
 public class ProjectController {
 	
 	@Autowired
@@ -19,15 +22,22 @@ public class ProjectController {
 		return "Projects Endpoint";
 	}
 	
-	@RequestMapping("/create_project")
-	public String create_project() {
-		return "Create Project Endpoint";
+	@PostMapping("projects/post")
+	public void create_projcet(Project project) {
+		dao.create_project(project);
 	}
 	
-	@RequestMapping("/list_projects")
+	@RequestMapping("projects/list")
 	public List<Project> list_projects(){
 		List<Project> projects = dao.loadAll();
 		return projects; 
     }
+	
+	@RequestMapping("projects/sample")
+	public Project sample_project() {
+		Project project = new Project(1, 1, "Sample Project", "sample project description", 
+				"2021-03-22 22:38:49", "c++,python","frontend,backend", "discord.com");
+		return project;
+	}
 	
 }

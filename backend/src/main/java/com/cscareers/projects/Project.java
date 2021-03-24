@@ -3,103 +3,88 @@ package com.cscareers.projects;
 public class Project {
 	
 	private int id;
-	private int user_id;
+	private int userId;
 
-	private String project_title;
-	private String project_description;
-	private String date_created;
-	private String project_tags;
-	private String looking_for_tags;
-	private String join_url;
+	private String projectTitle;
+	private String projectDescription;
+	private String dateCreated;
+	private String projectTags;
+	private String lookingForTags;
+	private String joinUrl;
 	
-	// default constructor
+	
 	public Project() {
 	}
-	
-	
-	public Project(int id, int user_id, String project_title, String project_description, String date_created,
-			String project_tags, String looking_for_tags, String join_url) {
+
+	public Project(int id, int userId, String projectTitle, String projectDescription, String dateCreated,
+			String projectTags, String lookingForTags, String joinUrl) {
 		super();
 		this.id = id;
-		this.user_id = user_id;
-		this.project_title = project_title;
-		this.project_description = project_description;
-		this.date_created = date_created;
-		this.project_tags = project_tags;
-		this.looking_for_tags = looking_for_tags;
-		this.join_url = join_url;
+		this.userId = userId;
+		this.projectTitle = projectTitle;
+		this.projectDescription = projectDescription;
+		this.dateCreated = dateCreated;
+		this.projectTags = projectTags;
+		this.lookingForTags = lookingForTags;
+		this.joinUrl = joinUrl;
 	}
-
-	// id getter-setter
+	
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
 	}
-	
-	// user_id getter-setter
 	public int getUserId() {
-		return user_id;
+		return userId;
 	}
-	public void setUserId(int user_id) {
-		this.user_id = user_id;
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
-	
-	// project_title getter-setter
 	public String getProjectTitle() {
-		return this.project_title;
+		return projectTitle;
 	}
-	public void setProjectTitle(String project_title) {
-		this.project_title = project_title;
+	public void setProjectTitle(String projectTitle) {
+		this.projectTitle = projectTitle;
 	}
-	
-	// project_description getter-setter
 	public String getProjectDescription() {
-		return this.project_description;
+		return projectDescription;
 	}
-	public void setProjectDescription(String project_description) {
-		this.project_description = project_description;
+	public void setProjectDescription(String projectDescription) {
+		this.projectDescription = projectDescription;
 	}
-	
-	// date_created getter-setter
 	public String getDateCreated() {
-		return this.date_created;
+		return dateCreated;
 	}
-	public void setDateCreated(String date_created) {
-		this.date_created = date_created;
+	public void setDateCreated(String dateCreated) {
+		this.dateCreated = dateCreated;
 	}
-	
-	// project_tags getter-setter
 	public String getProjectTags() {
-		return this.project_tags;
+		return projectTags;
 	}
-	public void setProjectTags(String project_tags) {
-		this.project_tags = project_tags;
+	public void setProjectTags(String projectTags) {
+		this.projectTags = projectTags;
 	}
-	
-	// looking_for_tags getter-setter
 	public String getLookingForTags() {
-		return this.looking_for_tags;
+		return lookingForTags;
 	}
-	public void setLookingForTags(String looking_for_tags) {
-		this.looking_for_tags = looking_for_tags;
+	public void setLookingForTags(String lookingForTags) {
+		this.lookingForTags = lookingForTags;
 	}
-	
-	// join_url getter-setter
 	public String getJoinUrl() {
-		return this.join_url;
+		return joinUrl;
 	}
-	public void setJoinUrl(String join_url) {
-		this.join_url = join_url;
+	public void setJoinUrl(String joinUrl) {
+		this.joinUrl = joinUrl;
 	}
 	
-
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", user_id=" + user_id + ", project_title=" + project_title + ", project_description=" + project_description + ", date_created="
-				+ date_created + ", project_tags=" + project_tags + ", looking_for_tags=" + looking_for_tags + ", join_url=" + join_url + "]";
+		return "Project [id=" + id + ", userId=" + userId + ", projectTitle=" + projectTitle + ", projectDescription="
+				+ projectDescription + ", dateCreated=" + dateCreated + ", projectTags=" + projectTags
+				+ ", lookingForTags=" + lookingForTags + ", joinUrl=" + joinUrl + "]";
 	}
 	
+    
+	
 }
-
