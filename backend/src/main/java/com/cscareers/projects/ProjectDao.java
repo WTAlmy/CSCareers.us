@@ -14,6 +14,15 @@ public class ProjectDao {
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 	
+	// insert project into projects table
+	public void create_project(Project project) {
+		String fields = "(userId,projectTitle,projectDescription,projectTags,lookingForTags,joinUrl)";
+		String sql = "INSERT INTO projects " + fields + " VALUES(?,?,?,?,?,?)";
+		jdbcTemplate.update(sql,project.getUserId(),project.getProjectTitle(),project.getProjectDescription(),
+				project.getProjectTags(),project.getLookingForTags(),project.getJoinUrl());
+	}
+    
+	// retrieves all rows from projects table
 	public List<Project> loadAll(){
 		return jdbcTemplate.query("select * from projects", (resultSet, i) -> {
 			return toProject(resultSet);
@@ -23,13 +32,13 @@ public class ProjectDao {
 	private Project toProject(ResultSet resultSet) throws SQLException {
 		Project project = new Project();
 		project.setId(resultSet.getInt("id"));
-		project.setUserId(resultSet.getInt("user_id"));
-		project.setProjectTitle(resultSet.getString("project_title"));
-		project.setProjectDescription(resultSet.getString("project_description"));
-		project.setProjectTags(resultSet.getString("project_tags"));
-		project.setLookingForTags(resultSet.getString("looking_for_tags"));
-		project.setDateCreated(resultSet.getString("date_created"));
-		project.setJoinUrl(resultSet.getString("join_url"));
+		project.setUserId(resultSet.getInt("userId"));
+		project.setProjectTitle(resultSet.getString("projectTitle"));
+		project.setProjectDescription(resultSet.getString("projectDescription"));
+		project.setProjectTags(resultSet.getString("projectTags"));
+		project.setLookingForTags(resultSet.getString("lookingForTags"));
+		project.setDateCreated(resultSet.getString("dateCreated"));
+		project.setJoinUrl(resultSet.getString("joinUrl"));
 		return project;
 	}
 }
