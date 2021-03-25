@@ -1,0 +1,37 @@
+<head>
+    <title> CSCareers.us </title>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/login.css">
+    <script defer src="js/login.js"> </script>
+</head>
+<body>
+    <!-- <main id="main-holder">
+        <h1 id="login-header">Login</h1>
+        
+        <div id="login-error-msg-holder">
+          <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+        </div>
+        
+        <form id="login-form">
+          <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+          <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+          <input type="submit" value="Login" id="login-form-submit">
+        </form>
+      </main> -->
+      <main id="main-holder">
+        <h1 id="login-header">Login</h1>
+        <!-- login form -->
+        <form id="login-form">
+            <div class = "box">
+                <input type="text" name="username" id="username-field" class="login-form-field" value="username" onFocus="field_focus(this, 'username');" onblur="field_blur(this, 'username');">
+                <input type="password" name="username" id="password-field" class="login-form-field" value="username" onFocus="field_focus(this, 'username');" onblur="field_blur(this, 'password');">
+                <input type="submit" value="Login" id="login-form-submit" class="button"> 
+                <input type="submit" value="Signup" id="signup-form-submit" class="button">
+            </div>
+        </form>
+
+      </main>
+</body>
