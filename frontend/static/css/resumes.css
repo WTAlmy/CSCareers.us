@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+:root {
+    --leading: 2em;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    text-align: center;
+    background-color: aqua;
+}
+
+header {
+    margin: 2em;
+    font-weight: bold;
+}

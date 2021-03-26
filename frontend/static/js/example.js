@@ -8,3 +8,5 @@ $.get('http://34.68.104.62:8090/users/sample', function(data) {
   document.write("<br> Internships:" + data.previousInternships);
   document.write("<br> ID:" + data.id);  
 });
+
+
