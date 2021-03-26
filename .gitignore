@@ -86,4 +86,7 @@ local.properties
 ### Maven ###
 target/
 
+### React ###
+reactFrontend/node_modules
+
 /bin
