@@ -14,7 +14,7 @@ html {
   
   #main-holder {
     width: 20%;
-    height: 40%;
+    height: 60%;
     display: grid;
     justify-items: center;
     align-items: center;
@@ -23,7 +23,7 @@ html {
     box-shadow: 10px 10px;
   }
 
-  #login-header {
+  #signup-header {
       color: #3a3a3a;
   }
   
@@ -45,8 +45,8 @@ html {
   img:hover{
     opacity: 65%;
   }
-  
-  #login-form {
+
+  #signup-form {
     align-self: flex-start;
     display: grid;
     justify-items: center;
@@ -54,11 +54,11 @@ html {
     margin-top: 10px;
   }
   
-  .login-form-field::placeholder {
+  .signup-form-field::placeholder {
     color: #3a3a3a;
   }
   
-  .login-form-field {
+  .signup-form-field {
     border: none;
     border-bottom: 1px solid #3a3a3a;
     margin-bottom: 10px;

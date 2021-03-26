@@ -12,6 +12,10 @@ def root():
 def login():
   return app.send_static_file('login.html')
 
+@app.route('/signup')
+def signup():
+  return app.send_static_file('signup.html')
+
 @app.route('/home')
 def home():
   return app.send_static_file('home.html')
