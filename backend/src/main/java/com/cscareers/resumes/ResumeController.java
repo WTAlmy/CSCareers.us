@@ -42,9 +42,11 @@ public class ResumeController {
 		return resumePost;
 	}
 	
-	@RequestMapping("/resumes/post/comment")
-	public void post_comment(ResumeComment resumeComment) {
+	@PostMapping("/resumes/post/comment")
+	@ResponseBody
+	public ResumeComment post_comment(@RequestBody ResumeComment resumeComment) {
 		dao.post_comment(resumeComment);
+		return resumeComment;
 	}
 	
 	@RequestMapping("/resumes/list/comments")

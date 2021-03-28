@@ -24,7 +24,7 @@ public class ResumeDao {
 
 	// retrieves all rows from projects table
 	public List<ResumePost> loadAll(){
-		return jdbcTemplate.query("SELECT * FROM resume_post", (resultSet, i) -> {
+		return jdbcTemplate.query("SELECT * FROM resume_post ORDER BY datePosted DESC", (resultSet, i) -> {
 			return toResumePost(resultSet);
 		});
 	}

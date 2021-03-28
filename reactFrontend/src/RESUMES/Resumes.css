@@ -1,0 +1,95 @@
+.page {
+  
+  background-color: white;
+  
+}
+
+.resBody {
+  margin: 1em 2em 1em 2em;
+}
+
+
+header {
+  text-align: center;
+}
+h1 {
+  
+  color: black;
+}
+
+a  {
+  font-size: 20px;
+  
+}
+
+button {
+  background-color: rgb(192, 189, 189);
+  border: none;
+  border-radius: .2em;
+  margin-top: .5em;
+  padding: 10px 7px 10px 7px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+}
+
+.user {
+  margin-left: 7px;
+  color: rgb(19, 18, 18);
+  font-weight: bold;
+}
+
+.title {
+  margin-left: 7px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.desc {
+  margin-left: 7px;
+  margin-bottom: 7px;
+}
+
+.date {
+  margin-left: 7px;
+  font-size: 12px;
+  color: rgb(61, 58, 58);
+}
+
+.box {
+  display: none;
+  border: none;
+  width: 100%;
+  background-color: rgb(141, 140, 140);
+  border-radius: .2em;
+}
+
+.commentBox {
+  float: right;
+  margin: 1.5em;
+  border: 2px solid gray;
+  background-color: white;
+  padding: 0 1em 0 1em;
+  width: 31%;
+  height: 1000px;
+  margin-top: 0;
+}
+
+.comments {
+  border: 2px solid black;
+  height: 85%;
+  list-style-type: none;
+  padding: 2%;
+}
+
+.commentUser {
+  font-weight: bold;
+}
+
+.commentDate {
+  font-size: small;
+  color: gray;
+}
