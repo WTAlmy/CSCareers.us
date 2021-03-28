@@ -6,7 +6,10 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @RestController
 @CrossOrigin("*")
@@ -26,9 +29,11 @@ public class ResumeController {
 		return resumePosts;
 	}
 	
-	@RequestMapping("/resumes/post/resume")
-	public void post_resume(ResumePost resumePost) {
+	@PostMapping("/resumes/post/resume")
+	@ResponseBody
+	public ResumePost post_resume(@RequestBody ResumePost resumePost) {
 		dao.post_resume(resumePost);
+		return resumePost;
 	}
 	
 	@RequestMapping("/resumes/sample/resume")

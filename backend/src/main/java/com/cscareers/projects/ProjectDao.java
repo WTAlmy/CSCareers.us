@@ -17,7 +17,7 @@ public class ProjectDao {
 	// insert project into projects table
 	public void create_project(Project project) {
 		String fields = "(userId,projectTitle,projectDescription,projectTags,lookingForTags,joinUrl)";
-		String sql = "INSERT INTO projects " + fields + " VALUES(?,?,?,?,?,?)";
+		String sql = "INSERT INTO projects" + fields + " VALUES(?,?,?,?,?,?)";
 		jdbcTemplate.update(sql,project.getUserId(),project.getProjectTitle(),project.getProjectDescription(),
 				project.getProjectTags(),project.getLookingForTags(),project.getJoinUrl());
 	}

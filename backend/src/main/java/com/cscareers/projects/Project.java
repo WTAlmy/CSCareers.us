@@ -12,23 +12,6 @@ public class Project {
 	private String lookingForTags;
 	private String joinUrl;
 	
-	
-	public Project() {
-	}
-
-	public Project(int id, int userId, String projectTitle, String projectDescription, String dateCreated,
-			String projectTags, String lookingForTags, String joinUrl) {
-		super();
-		this.id = id;
-		this.userId = userId;
-		this.projectTitle = projectTitle;
-		this.projectDescription = projectDescription;
-		this.dateCreated = dateCreated;
-		this.projectTags = projectTags;
-		this.lookingForTags = lookingForTags;
-		this.joinUrl = joinUrl;
-	}
-	
 	public int getId() {
 		return id;
 	}
@@ -84,7 +67,4 @@ public class Project {
 				+ projectDescription + ", dateCreated=" + dateCreated + ", projectTags=" + projectTags
 				+ ", lookingForTags=" + lookingForTags + ", joinUrl=" + joinUrl + "]";
 	}
-	
-    
-	
 }
