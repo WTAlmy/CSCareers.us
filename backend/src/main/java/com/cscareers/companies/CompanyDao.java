@@ -21,7 +21,7 @@ public class CompanyDao {
 	private final String UPDATE_SQL = "UPDATE company_data SET allTotal = ?, acceptedTotal = ?, gradTotal = ?, avgGpa = ?, avgPrior = ?, avgYear = ? WHERE id = ?";
 	
 	public void update(Company company) {
-		jdbcTemplate.update(UPDATE_SQL, company.getAllTotal(), company.getGradTotal(), company.getAcceptedTotal(), company.getAvgGpa(), company.getAvgPrior(), company.getAvgYear(), company.getId());
+		jdbcTemplate.update(UPDATE_SQL, company.getAllTotal(), company.getAcceptedTotal(), company.getGradTotal(), company.getAvgGpa(), company.getAvgPrior(), company.getAvgYear(), company.getId());
 	}
 	
 	public void insert(DataReport report) {
