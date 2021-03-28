@@ -6,7 +6,10 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @RestController
 @CrossOrigin("*")
@@ -31,8 +34,9 @@ public class CompanyController {
 		return dao.userReports(userId);
 	}
 	
-	@RequestMapping("/companies/add_report")
-	public Company add_report(DataReport report) {
+	@PostMapping("/companies/add_report")
+	@ResponseBody
+	public Company add_report(@RequestBody DataReport report) {
 		dao.insert(report);
 		List<DataReport> comp_reports = dao.companyReports(report.getCompanyId());
 		// Base Data
