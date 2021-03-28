@@ -1,0 +1,54 @@
+  .companies-main-div {
+    min-height: 70vh;
+    background: rgb(137, 215, 241);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .company-object {
+    height: 400px;
+    width: 400px;
+    margin: 15px 0px 15px 0px;
+    padding: 10px 15px;
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #3a3a3a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+  }
+  
+  .company-title {
+      text-align: center;
+  }
+  .desc-box {
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  
+  .btns {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  
+  .company-description 
+  {
+    padding: 5px;
+    text-align: left;
+  }
+  
+  .company-logo {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40%;
+  
+  }
+  
