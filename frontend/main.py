@@ -31,14 +31,14 @@ def upload():
 </form>
 """
 
+@app.route('/upload', methods=['GET', 'POST'])
 @cross_origin()
-@app.route('/upload', methods=['POST'])
 def process():
   uploaded_file = request.files.get('image')
   for f in request.files:
     print(f)
   if not uploaded_file:
-    return "No Image Uploaded", 400
+    return "No Image Uploaded", 812
 
   gcs = storage.Client()
   bucket = gcs.get_bucket("cscareers-main")
