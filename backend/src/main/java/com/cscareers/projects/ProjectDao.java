@@ -24,7 +24,7 @@ public class ProjectDao {
     
 	// retrieves all rows from projects table
 	public List<Project> loadAll(){
-		return jdbcTemplate.query("select * from projects", (resultSet, i) -> {
+		return jdbcTemplate.query("SELECT * FROM projects ORDER BY dateCreated DESC", (resultSet, i) -> {
 			return toProject(resultSet);
 		});
 	}
