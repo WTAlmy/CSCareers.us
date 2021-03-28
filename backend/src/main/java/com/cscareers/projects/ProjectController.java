@@ -7,11 +7,12 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
-
-@RestController
 @CrossOrigin("*")
+@RestController
 public class ProjectController {
 	
 	@Autowired
@@ -23,8 +24,10 @@ public class ProjectController {
 	}
 	
 	@PostMapping("projects/post")
-	public void create_projcet(Project project) {
+	@ResponseBody
+	public Project create_project(@RequestBody Project project) {
 		dao.create_project(project);
+		return project;
 	}
 	
 	@RequestMapping("projects/list")
@@ -35,9 +38,14 @@ public class ProjectController {
 	
 	@RequestMapping("projects/sample")
 	public Project sample_project() {
-		Project project = new Project(1, 1, "Sample Project", "sample project description", 
-				"2021-03-22 22:38:49", "c++,python","frontend,backend", "discord.com");
+		Project project = new Project();
+		project.setId(1);
+		project.setUserId(1);
+		project.setProjectTitle("Sample Project");
+		project.setProjectDescription("Sample project description");
+		project.setProjectTags("c++,python");
+		project.setLookingForTags("frontend,backend");
+		project.setJoinUrl("discord.com");
 		return project;
 	}
-	
 }
