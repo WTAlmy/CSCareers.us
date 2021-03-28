@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cscareers-proj",
+  "private_key_id": "8ca44792bed4849bc5caddbdeb5c745b4e22e227",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCV5zE9O/LraH7j\nC4WXE7AzRAxV6VKItiHmjYl/72CTS9iFFFug/Y4WGdiTaT/D3gOePzDu0gqcXIJz\ng72ssg7pQ5efaXnDCi5E5REg3NJYvNsALB/vlCbHBEE6fLxYU5qMYgO0eXuHBT6O\nUbAJc2WHvx7erGfQ+ZNgFkiigV5uSZJK7WE5vfYCFRqIUcTs4Oxw/d5HCzCoVkZ6\nDj2SFwsPHlulR8CcBFUtcNodMc2RH471DQrXZszAIo21JOq9kIpcBxBejc6oJZ08\nEgn6jaAf0DSXqWwXdyfFlDOR2bZEVPaOZXfkfXjtQ9oeIwLVwkZOjZIFZS8X8AT6\ntAOmrsAzAgMBAAECggEARM+v5rASPsXlGUw8srEy/RWLpBRK8r7IqRDnwXadGoCC\nj/Rca3Z5NuP+awyxXLQZbRcM21RH0qcUqvoao5/JAIMqot7EKigOPUn5puA3Hszy\nqw2WS1/yvQDTAIop21Hla/PCR6JMdhqOML6G1I/IV5wAC6+QqHkokb8o8I/6TR18\n08sHsUpG77cXmT1PzMipaITNTogzNjSpO5ZtXYFmTkcmldE3AZIXqhy7FuK+7b3U\nbxh1YdSjIqvU1SGoXRzOPeXsmgQhwAKsO6sddh3Nxp+PhhLpvyVYPFv7mVPQiU/W\n3f1LgHOSvRQT48U3vwn/pj7GPjafY/KFxiHIpdxuYQKBgQDFA0VII4ughJYAwWHh\n3gECltGjNRpir9WTRY6ECebbynDwXulAXVC35vLKeLs/KgA/5r6bduMVQiMrgK/U\nx01jO6FrobjE81QbLnd0436YDvRJ8wHxA2ZUP6P1v8oaKr8sqvZAaDmDiBhJOPSz\n5h5VYs3jC7dAOrj22hNziMg6dwKBgQDCyQlQolB9XadW6BUU5+5lIL+ztN4rwlC2\nD+kzUhQJa7Tmao2i+VtX3r28bDd35kgrgya+Hxw7ojkMWlIMRYbk3ZQ4ZSTb7Ij4\njbqAHLccuSpsjWtnui3U+OrDAA0kpqKwAQMZajuxuNiBRehUjNjhosAn5218RS9Z\nEth2ujpbJQKBgAOcQLvGsvtZEqqm4JVUDS6v9t2Hzpj6Ye6V+ruettVWS2WMR7f/\nPchw+ggN2Fia+3AwWVPeBOFR2fUlIZPDpz5nTFj9mLY7Q1JQMq44sQw2UfG8+08g\nYdKva+DIB/scx24ZH/QkNNGdP9yvp4RYdjvYWK+Nemk56kPT0UFvw0OXAoGASTvM\nhMSB/qB3ifU39+Q7fUoSyT33SfyE2+6ffuwdHG2iVf85wUx/S0ozi+Qj9rBd8f4d\nUt3ff4w+ZqaOso5xaRrl304nzYfg95JRzFj/f40epjGFcDpPgQMVQLuENYNxJzs6\nLxQB3Y/h1rix4RgTcsH9/QLF5zMb2iF7wSfDSQECgYAvMrv81GmQPWikGCriTBAI\n03MESB3okIPRqjjVbUavxLQzmtb/are6+uGflVh77cBb1Rop4IM1QmJV+6l0yf2W\n++esy3SM5yux+1MxDcj18cARYf6p4nALIKCnmFTGx3QgEbXo6RN3ad7sXeEuWIy8\n6o0Onf7CO9fwM1jXpiYskg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "cscareer-serv@cscareers-proj.iam.gserviceaccount.com",
+  "client_id": "105647641810334084784",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cscareer-serv%40cscareers-proj.iam.gserviceaccount.com"
+}
