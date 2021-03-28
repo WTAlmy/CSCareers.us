@@ -1,6 +1,6 @@
 import uuid
 from flask import Flask, request
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 from google.cloud import storage
 
 app = Flask(__name__, static_url_path='')
@@ -31,6 +31,7 @@ def upload():
 </form>
 """
 
+@cross_origin()
 @app.route('/upload', methods=['POST'])
 def process():
   uploaded_file = request.files.get('image')
